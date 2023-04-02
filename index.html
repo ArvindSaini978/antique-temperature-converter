@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antique Temperature Converter</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link href="tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/main.css">
+</head>
+
+<body class="h-[100vh] bg-[#f5f1f1] grid">
+    <div
+        class="rounded-xl -[50vh] bg-gradient-custom1 w-[92%] md:w-[80%] lg:w-[60%] xl:w-[50%] mx-auto place-self-center px-6 2xsm:px-10 py-12 2xsm:py-8 shadow-2xl flex flex-col items-center text-center">
+        <h1 class="text-xl 2xsm:text-2xl h-fit text-white font-medium col-start-1 col-end-3">Enter Temperature To Convert It
+            In Different Units.</h1>
+        <label for="celsius"
+            class="w-[100%] xsm:w-[90%] sm:w-[75%] md:w-[70%] xmd:w-[63%] lg:w-[70%] xl:w-[66%] mt-8 text-lg font-medium text-white flex flex-col 2xsm:flex-row items-start 2xsm:items-center justify-between">Celsius:
+            <input type="number" name="celsius" id="celsius" oninput="Cconverter(this.value)" onchange="Cconverter(this.value)"
+                class="w-full 2xsm:w-auto mt-2 2xsm:mt-0 text-black font-normal outline-none px-4 py-2 rounded-md text-lg bg-[#f3f5f9]"
+                placeholder="°Celsius">
+        </label>
+        <label for="fahrenheit"
+            class="w-[100%] xsm:w-[90%] sm:w-[75%] md:w-[70%] xmd:w-[63%] lg:w-[70%] xl:w-[66%] mt-6 text-lg font-medium text-white flex flex-col 2xsm:flex-row items-start 2xsm:items-center justify-between">Fahrenheit:
+            <input type="number" name="fahrenheit" id="fahrenheit" oninput="Fconverter(this.value)" onchange="Fconverter(this.value)"
+                class="w-full 2xsm:w-auto mt-2 2xsm:mt-0 text-black font-normal outline-none px-4 py-2 rounded-md text-lg bg-[#f3f5f9]"
+                placeholder="°Fahrenheit">
+        </label>
+        <label for="kelvin"
+            class="w-[100%] xsm:w-[90%] sm:w-[75%] md:w-[70%] xmd:w-[63%] lg:w-[70%] xl:w-[66%] mt-6 text-lg font-medium text-white flex flex-col 2xsm:flex-row items-start 2xsm:items-center justify-between">Kelvin:
+            <input type="number" name="kelvin" id="kelvin" oninput="Kconverter(this.value)" onchange="Kconverter(this.value)"
+                class="w-full 2xsm:w-auto mt-2 2xsm:mt-0 text-black font-normal outline-none px-4 py-2 rounded-md text-lg bg-[#f3f5f9]"
+                placeholder="Kelvin">
+        </label>
+    </div>
+
+
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>
